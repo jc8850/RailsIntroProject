@@ -1,0 +1,11 @@
+For this project, I'll be using data from the Pokemon API (https://pokeapi.co/).
+The API is very in-depth, showing almost everything you need to know about a specified Pokemon. It is structured in a JSON format.
+Aside from the Pokemon themselves, it also contains information on other aspects of the Pokemon world, such as items, types, the different generations of games, and much more.
+For this project, I want to keep things relatively simple. So I'll have my data based around the first generation of 151 Pokemon, and their 15 different types.
+As such, will start by referencing https://pokeapi.co/api/v2/generation/1 and work from there.
+Three database tables will be used. A table for Pokemon, with and ID, Name, and imagelink column. A table for Types with ID, and name column. And finally, a table to join the two together.
+The joiner table (titled PokeTypes) will contain an ID, and two Foreign keys, detailing the Pokemon, and the type they belong to.
+The reason for the Poketype table existing is that a Pokemon can have up to two types, and types can have up to hundreds of Pokemon. A one-to-many relationship.
+
+
+Please refer to the included ERD (project1ERD.png) for more information.
