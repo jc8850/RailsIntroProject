@@ -1,4 +1,4 @@
 class PokeType < ApplicationRecord
-  belongs_to :Pokemon
-  belongs_to :Type
+  belongs_to :pokemon
+  belongs_to :type
 end

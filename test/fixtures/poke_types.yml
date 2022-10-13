@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Pokemon: one
-  Type: one
+  pokemon: one
+  type: one
 
 two:
-  Pokemon: two
-  Type: two
+  pokemon: two
+  type: two
