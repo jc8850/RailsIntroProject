@@ -1,1 +1,14 @@
-<h1>about</h1>
+<h1>About this site</h1>
+
+<h2>Welcome to JC's site for Fullstack project 1</h2>
+
+<p>This is a pretty simple Ruby on Rails project making use of the Pokemon API.
+I wanted to keep things simple so I only used a list of Pokemon and types with a many-many relationship between the two using a joiner table in between.
+In addition to the required ID column, the Pokemon table has column of name and an imagelink, while the Types table only has name. On the site, users are able to browse through
+the first 151 Pokemon (but capable of much more through adjusting the db seed file) and view their types. Users are also able to search for Pokemon by name.
+Similarly, users are also able to view the different types and each pokemon that have a specific type.</p>
+
+
+<h2>Database ERD</h2>
+
+<%= image_tag("project1ERD.png", :alt => "database erd") %>
