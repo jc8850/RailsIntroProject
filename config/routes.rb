@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/pokemon", to: "pokemon#index"
   get "/pokemon/:id", to: "pokemon#show"
   get "/types", to: "types#index"
+  get "/types/:id", to: "types#show"
 end
