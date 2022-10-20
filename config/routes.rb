@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pokemon#index"
+  get "/about" => "application#about"
 
   get "/pokemon", to: "pokemon#index"
   get "/pokemon/:id", to: "pokemon#show"
   get "/types", to: "types#index"
   get "/types/:id", to: "types#show"
+
 end
