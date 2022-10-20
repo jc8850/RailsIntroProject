@@ -7,7 +7,8 @@
   <% @pokemon.types.each do |pt| %>
     <li>
       <a href="/types/<%= pt.id %>">
-      <%= pt.name %>
+        <%= pt.name %>
+      </a>
     </li>
   <% end %>
 </ul>
