@@ -3,6 +3,7 @@
 <ul>
   <% @pokemon.each do |pokemon| %>
     <li>
+    <a href="/pokemon/<%= pokemon.id %>">
       <%= pokemon.name %>
     </li>
   <% end %>

@@ -1,0 +1,12 @@
+<h1><%= @pokemon.name %></h1>
+
+<img src="<%= @pokemon.imgLink %>" alt="<%= @pokemon.name %>" width="500">
+
+<h2>Types</h2>
+<ul>
+  <% @pokemon.types.each do |pt| %>
+    <li>
+      <%= pt.name %>
+    </li>
+  <% end %>
+</ul>
