@@ -2,7 +2,8 @@
 
 <ul>
   <% @types.each do |type| %>
-    <li>
+     <li>
+    <a href="/types/<%= type.id %>">
       <%= type.name %>
     </li>
   <% end %>
