@@ -1,6 +1,10 @@
 class PokemonController < ApplicationController
   def index
-    @pokemon = Pokemon.all
+    if params[:search]
+      @pokemon = Pokemon.search(params[:search])
+    else
+      @pokemon = Pokemon.all
+    end
   end
 
   def show

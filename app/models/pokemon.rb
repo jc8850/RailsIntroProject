@@ -4,4 +4,12 @@ class Pokemon < ApplicationRecord
 
   has_many :poke_types
   has_many :types, through: :poke_types
+
+  def self.search(search)
+    if search
+      self.where('name LIKE ?', "%#{search}%")
+    else
+      find(:all)
+    end
+  end
 end
