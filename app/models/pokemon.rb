@@ -12,4 +12,6 @@ class Pokemon < ApplicationRecord
       find(:all)
     end
   end
+  paginates_per 25
+
 end

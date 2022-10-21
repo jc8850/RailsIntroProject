@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get "/types", to: "types#index"
   get "/types/:id", to: "types#show"
 
+  resources :pokemon do
+    get '/page/:page', action: :index, on: :collection
+  end
 end

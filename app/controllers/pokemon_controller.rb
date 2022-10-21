@@ -1,9 +1,9 @@
 class PokemonController < ApplicationController
   def index
     if params[:search]
-      @pokemon = Pokemon.search(params[:search])
+      @pokemon = Pokemon.search(params[:search]).page params[:page]
     else
-      @pokemon = Pokemon.all
+      @pokemon = Pokemon.order(:id).page params[:page]
     end
   end
 
